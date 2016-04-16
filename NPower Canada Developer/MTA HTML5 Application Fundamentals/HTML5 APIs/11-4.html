@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<!-- Jonathan Nelson Castillo. Development Stream. MTA 98-375. -->
+<!--February 19, 2016. Lesson 11. Exercise 11-4 -->
+<!-- HTML File -->
+
+<!-- Note: Will only work for IE 10 or 11 and Firefox. -->
+<html>
+	<head>
+			<meta charset="utf-8">
+			<title>Exercise 11-4</title>
+			<link href="css/11.css" rel="stylesheet" type="text/css">
+			<script>
+				<!-- Web Worker Function -->
+				<!-- Function that describes how many iterations in the bigLoop.js in a Web Worker environment or simply in the background -->
+				function workerBigLoop()
+				{
+					var worker = new Worker('bigLoop.js');
+					worker.onmessage = function (event) 
+					{
+						alert("Web Worker Completed " + event.data + " iterations" );
+					}
+				}
+				<!-- Simple alerting a box that has "Hello" text in it -->
+				function sayHello()
+				{
+					alert("Hello User!" );
+				}
+				<!-- Non web worker function -->
+				<!-- Simple function that demonstrates loop -->
+				function bigLoop()
+				{
+					for (var i = 0; i <= 1000000000; i += 1)
+					{
+						var j = i;
+					}
+					alert("Non Web Worker Completed " + j + " iterations" );
+				}
+
+	  </script>
+	</head>
+	<body>
+		<h4>Jonathan Nelson Castillo. Development Stream. MTA 98-375.</h4>
+		<h4>February 19, 2016. Lesson 11. Exercise 11-4</h4>
+		<br/><br/><br/><br/>
+		<div id="background">
+			<br/><br/><br/>
+			<!-- button onClick - an event where the user clicked the button, the button will find the value inside the onclick and do the specific function -->
+			<input id="button1" type="button" onClick="sayHello();" value="Say Hello" />
+			<input id="button1" type="button" onClick="workerBigLoop();" value="Worker Big Loop" />
+			<input id="button1" type="button" onClick="bigLoop();" value="Big Loop" />
+		</div>
+	</body>
+</html>

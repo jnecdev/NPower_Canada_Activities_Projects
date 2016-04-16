@@ -1,0 +1,81 @@
+/* CSS File - Link for 5-3 HTML File */
+/*  Jonathan Castillo. Development Stream. MTA 98-375  */
+/*  Lesson 5. Excercise 5-3. February 1,2016.  */
+
+
+
+
+/* All texts are aligned in center */
+
+body
+{
+	text-align:center;
+}
+
+#grid 
+{
+	border: 1px solid black;
+	background: yellow;
+	display: -ms-grid;
+	-ms-grid-columns: 1fr 1fr;
+	-ms-grid-rows: 1fr 3fr 3fr 1fr;
+}
+
+
+/* 1st row with 2 columns span  */
+header 
+{ 
+	-ms-grid-row: 1;
+	
+	background: green;
+	color: white;
+	-ms-grid-column-span:2;
+}
+
+
+/* 2nd row, 1st column with 1 column span(not stated) */
+#sectionOne 
+{ 
+	-ms-grid-row: 2;
+	-ms-grid-column: 1;
+	background: red;
+	color: white;
+}
+
+/* 2nd row, 2nd column with 1 column span(not stated) */
+#sectionTwo 
+{ 
+	-ms-grid-row: 2;
+	-ms-grid-column: 2;
+	background: orange;
+	color: white;
+}
+
+/* 3rd row, 1st column with 1 column span(not stated) */
+#sectionThree 
+{ 
+	-ms-grid-row: 3;
+	-ms-grid-column: 1;
+	background: yellow;
+	color: white;
+}
+
+/* 3rd row, 2nd column with 1 column span (not stated) */
+
+#sectionFour 
+{ 
+	-ms-grid-row: 3;
+	-ms-grid-column: 2;
+	background: blue;
+	color: white;
+}
+
+/* 4th row with 2 columns span */
+footer 
+{ 
+-ms-grid-row: 4;
+
+background: purple;
+color: white;
+-ms-grid-column-span:2;
+}

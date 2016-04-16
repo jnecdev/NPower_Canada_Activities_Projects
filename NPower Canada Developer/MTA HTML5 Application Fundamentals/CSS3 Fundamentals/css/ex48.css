@@ -1,0 +1,55 @@
+/* Exercise 4-8 CSS File */
+/* Jonathan Castillo. Development Stream. MTA-98-375. */
+/* January 28, 2015. */
+
+
+/* Main Div */
+#container
+{
+	width:1000px;
+	height:1500px;
+	background: green;
+	margin:auto;
+}
+
+/* Fixed Positioning */
+/*Dependent on the browser window and will force the element to
+appear in one area of the browser window regardless of the window being resized or scrolled */
+
+#inner
+{
+	position:fixed;
+	top:200px;
+	left:200px;
+	font-size:22px;
+	background:red;
+	text-align:center;
+}
+
+/* Hello World css */
+/* Top Background color */
+
+#helloWorld
+{
+	
+	height:200px;
+	background:yellow;
+	text-align:center;
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:50px;
+}
+
+/* Relative Positioning */
+/* Use to set the position of an element relative to where it is in the
+normal flow of the document and is not positioned according to the browser window */
+
+#innerfooter
+{
+	top:10px;
+	background:blue;
+	font-size:24px;
+	color:white;
+	position: relative
+}
+}

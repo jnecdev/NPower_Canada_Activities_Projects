@@ -1,0 +1,35 @@
+<!doctype html>
+
+<!-- Jonathan Nelson Castillo. Development Stream. MTA 98-375. -->
+<!--February 9, 2016. Exercise 8-7 -->
+<!-- HTML File -->
+
+<html>
+	<head>
+		<title>Exercise 8-7</title>
+		<meta charset="utf-8">
+		<!-- link to css file -->
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<!-- link to local jQuery folder file -->
+		<script src="jQuery/jquery-2.1.4.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			$("#top").click(function(){ <!-- onclick function for the id top -->
+			$("#bottom").slideDown("slow"); <!-- slidedown function for the id bottom when top id is clicked -->
+			});
+			});
+		
+		</script>
+	</head>
+	<body>
+		<h1 style="font-family:Prisma;text-align:center">Jonathan Nelson Castillo. Development Stream. MTA 98-375.</h1>
+		<h1 style="font-family:Prisma;text-decoration:underline;text-align:center">February 9, 2016. Exercise 8-7.</h1>
+		<br/>
+		<h1 id="top">Click Me!</h1>
+		<h2 id="bottom">jQuery Works</h2>
+			
+		
+	</body>
+</html>
+	
+	

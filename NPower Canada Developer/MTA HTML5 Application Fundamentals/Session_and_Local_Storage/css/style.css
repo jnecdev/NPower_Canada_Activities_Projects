@@ -1,0 +1,84 @@
+/* Jonathan Nelson Castillo. Development Stream. MTA 98-375. */
+/* February 15, 2016. Lesson 10. Exercise 10-3 */
+/* CSS File */
+
+
+	/* Served as the table tr. Made it as a div row */
+#row
+{
+	font-family: Trebuchet MS;
+    margin-left: auto;
+    margin-right: auto;
+	font-size: 15px;
+	width: 200px;
+	border-radius:20px;
+	color:black;
+	text-align:center;
+	display:block;
+	line-height:25px;
+	
+}
+
+/* body background color becomes coconut in non hexa name */
+body
+{
+	background-color: #FFFCCF;
+}
+
+/* id background for the background of the main content that consists of firstname, lastname, and the buttons (login, reset, logout) */
+#background
+{
+	background-color:black;
+	width: 500px;
+	height:270px;
+	margin-left: auto;
+    margin-right: auto;
+	
+}
+
+/* design for h1 */
+h1
+	{
+		font-family: Papyrus;
+	}
+
+
+/* design for p */
+p
+{
+	font-family:Trebuchet MS;
+	font-size:20px;
+	font-weight: bold;
+	
+}
+
+/* design for links or for the <a> tag */
+a:link 
+{
+    color: white;
+	text-decoration:none;
+}
+
+a:visited 
+{
+    color: white;
+	text-decoration: none;
+}
+
+a:hover 
+{
+    color: #d35400;
+	text-decoration:none;	
+	text-decoration: underline;
+    border-radius: 30px;
+	text-align:center;
+	font-size:26px;
+	font-family:papyrus;
+	
+}
+
+a:active 
+{
+    color: white;
+	text-decoration:none;
+}

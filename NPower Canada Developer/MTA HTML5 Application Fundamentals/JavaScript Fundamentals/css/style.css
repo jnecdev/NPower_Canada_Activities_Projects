@@ -1,0 +1,37 @@
+@font-face
+{
+	font-family: Prisma;
+	src: url('fonts/prisma/prisma.woff');
+}
+
+@font-face
+{
+	font-family: ka1;
+	src: url('fonts/ka1/ka1.woff');
+}
+
+
+#main
+{
+	text-align:center;
+	font-family: Papyrus;
+}
+
+#top
+{
+width:100%;
+height:	100%;
+background-color:yellow;
+font-family: ka1;
+}
+
+#bottom
+{
+font-family:ka1;
+width:100%;
+height:	100%;
+background-color:yellow;
+padding:50px;  
+display:none;
+}
+

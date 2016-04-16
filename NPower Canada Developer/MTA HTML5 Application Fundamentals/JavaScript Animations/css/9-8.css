@@ -1,0 +1,30 @@
+/* Jonathan Nelson Castillo. Development Stream. MTA 98-375. */
+/* February 11, 2016. Exercise 9-8 */
+/* CSS File */	
+
+#bottom
+{
+width: 200px;
+height: 100px;
+color: #d35400;
+background-color: black;
+border: 1px solid black;
+position: absolute;
+font-family:"Papyrus","Century Gothic";
+font-size:25px;
+text-decoration:underline;
+}
+
+body
+{
+	background-color:#8B8378;
+}
+
+h1
+{
+	font-family:"Papyrus","Trebuchet MS";
+	right:2%;
+	position:absolute;
+	font-size:20px;
+	
+}

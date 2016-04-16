@@ -1,0 +1,69 @@
+/* Exercise 4-5 CSS File */
+/* Jonathan Castillo. Development Stream. MTA-98-375. */
+/* January 28, 2015. */
+
+
+h1 /*heading 1 */
+{
+	font-family: "Papyrus","Courier New";
+	font-size: 10;
+	text-align:center;
+}
+
+/* Overall design */
+
+#properties
+{
+	font-family:"Trebuchet MS","Arial","Helvetica","sans-serif";
+	width:1000px;
+	border-collapse:collapse;
+}
+
+th /* table headings */
+{
+	border:1px solid black;
+	background:#2c3e50;
+	color: white;
+}
+td /* table column */
+{
+	border:1px solid black;
+	padding:10px;
+	text-align:center;
+}
+
+/* The state of a hyperlink when the link has not been visited */
+
+a:link
+{
+	color:#3498db; /* blue */
+	text-decoration:none;
+	font-style:oblique;
+}
+
+/* The state of a hyperlink that has already been visited. */
+
+a:visited
+{
+	color: #8e44ad; /* purple */
+	text-decoration: none
+	font-style:oblique;
+}
+
+/* The state of a hyperlink when the mouse is over the link. */
+
+a:hover
+{
+	color:#ecf0f1;
+	text-decoration:none;
+	background:black;
+}
+
+/* The state of a hyperlink when it is being clicked. */
+
+a:active
+{
+	color: white;
+	text-decoration:none;
+	background:black;	
+}

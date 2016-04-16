@@ -1,0 +1,131 @@
+<!doctype html>
+
+<!-- Lesson 2 Lab Activities Part Activities. MTA 38-375. -->
+<!-- Jonathan Castillo. Development Stream Class. January 26, 2016 -->
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson 2 Part A</title>
+	</head>
+	<body>
+		
+		<table border="10" bgcolor="#ADD8E6" align="center" style="font-family:arial">
+		<!--Align is used to align a certain text/s in a table 
+		    style is an inline html css tag, font-family is a css element. 
+		-->
+			<tr>
+				<td colspan="2" align="center" style="font-size:200%"><strong>Sign-up</strong></td>
+				<form>
+				<!-- Forms and Validations -->
+			<tr>
+				<!-- input name is a MUST - can be used later on for JavaScript -->
+				<td>
+					First Name:</td><td><input type="text" maxlength="20" name="firstName"  required>
+				</td>
+					<!-- Input type = "text" produces simple text
+					 input maxlength provides you a maximum length that you can type in the textbox
+					 -->
+			</tr>
+			<tr>
+				<td>
+					Last Name:</td><td><input type="text" maxlength="20" name="lastName"  required>
+				</td>
+					<!-- Input type = "text" produces simple text
+					input maxlength provides you a maximum length that you can type in the textbox
+					-->
+			</tr>
+			<tr>
+				<td>
+					E-mail:</td><td><input type="email" name="emailad"  required>
+				</td>
+					<!-- input type="email" should have symbol "@" then
+				     the web domain (i.e yahoo, google) -->
+			</tr>
+			<tr>	
+						
+				<td>
+				Password:</td><td><input type="password" name="pword" required>
+				</td>
+				<!-- input type="password" produces text that is hidden or with a mask -->
+			</tr>
+			<tr>
+				<td>
+					Gender:
+				</td>
+				<td>
+					<input type="radio" name="gender" value="male" required>Male:<br/>	
+					<input type="radio" name="gender" value="female">Female:
+				</td>
+					<!-- input type="radio" is a type of an option that you can only pick
+					 one option -->
+			</tr>
+			<tr>
+				<td>
+					Social Media Account:
+				</td>
+				<td>
+					<input type="checkbox" name="social" value="Facebook">Facebook<br/>
+					<input type="checkbox" name="social" value="Twitter">Twitter<br/>
+					<input type="checkbox" name="social" value="Instagram">Instagram<br/>
+					<input type="checkbox" name="social" value="Tumblr">Tumblr<br/>
+					<input type="checkbox" name="social" value="LinkedIn">LinkedIn<br/>
+					<!-- input type="checkbox" is a type of an option that you can pick multiple
+						 options 
+						-->
+				</td>
+			</tr>
+			<tr> 
+				<td>
+					Cities:
+				</td>
+				<td>
+					<select name="Cities">
+						<option value="blank">--</option>
+						<option value="TOR">Toronto</option>
+						<option value="MAR">ham</option>
+						<option value="VAU">Vaughan</option>
+						<option value="NOR">North York</option>
+						<option value="SCA">Scarborough</option>
+						<option value="BRA">Brampton</option>
+					</select>
+					<!-- select tag is a dropdown option -->
+			</tr>
+			<tr>
+				<td>
+					Streets:
+				</td>
+				<td>
+					<input list="streets" name="streetsList">
+					<datalist id="streets">
+						<option value="Dundas">
+						<option value="Bloor">
+						<option value="Union">
+						<option value="Sheppard">
+						<option value="Eglinton">
+						<option value="Bathurst">
+					</datalist>
+					<!-- an option where and when the user double clicks on the space provided,
+						 list of options are provided. doesn't require a closing option tag. -->
+				</td>
+			</tr>	
+				<td>
+					Comments/Feedbacks:
+				</td>
+				<td>
+					<textarea rows="10" cols="50">(optional)</textarea>
+					<!-- textarea tag is where usually you can put the comments
+						 and feedbacks
+					-->	
+				</td>
+				
+			<tr>
+				<td colspan="2" align="center">
+					<input type="reset" value="CLEAR">
+					<input type="submit" value="SUBMIT">	
+					<!-- input type="submit" is to send the data back to the server
+						 input type="reset" is to clear the form -->
+			</tr>		
+		</form>
+	</body>
+</html>

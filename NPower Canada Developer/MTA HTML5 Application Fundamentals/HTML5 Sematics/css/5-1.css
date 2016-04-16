@@ -1,0 +1,115 @@
+/* CSS File - Link for 5-1 HTML File */
+/*  Jonathan Castillo. Development Stream. MTA 98-375  */
+/*  Lesson 5. Excercise 5-1. February 1,2016.  */
+
+
+/* Texts are aligned center. */
+
+body
+{
+	margin-top:0px;
+	text-align:center;
+}
+
+
+/* Defines the main container - consists of the sub div tags or semantic div tags */
+#container
+{
+width:1000px;
+height:515px;
+margin:0px auto;
+}
+
+/* Makes the background of the header tag red and has the padding of 1px.*/
+
+#top_header 
+{
+	background:red;
+	padding:1px;
+	
+
+}
+
+
+/* Makes the background of the nav div orange and has the padding of 1px. */
+#top_menu 
+{
+	background:orange;
+	padding:1px;
+}
+
+/* Design of the nav contents list */
+
+#top_menu li 
+{
+	display:inline-block;
+	padding:30px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color:white;
+}
+
+/* Design of the section tag or the 800px to the left */
+
+section 
+{
+	background:green;
+	float:left;
+	width:800px;
+} 
+
+
+/* Design of the article tag inside the section tag or the specific design for the main content. */
+article 
+{
+	border:1px solid black;
+	margin:20px;
+	padding:10px;
+	background:yellow;
+	
+	
+}
+
+/* Design of the article footer - bottom of the article content. */
+
+article footer
+{
+	text-align:right;
+	font-size:14px;
+	font-weight:bold;
+	padding-top:10px;
+	text-decoration:underline;
+}
+
+
+/* Design for the aside tag */
+#side_news 
+{
+	padding-top:20px;
+	background:green;
+	height:100%;
+}
+
+/* Design for the aside h2 tag */
+
+#side_news h2 
+{
+	color:yellow;
+}
+
+
+/* Design for the aside p tag */
+#side_news p 
+{
+	color:white;
+}
+
+
+/* Design of the footer content - bottom of the page. */
+#the_footer 
+{
+	color:white;
+	background:blue;
+	border-top:5px solid orange;
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+
+<!-- Jonathan Nelson Castillo. Development Stream. MTA 98-375. -->
+<!--February 15, 2016. Lesson 10. Exercise 10-3 -->
+<!-- HTML File -->
+
+
+<html>
+  <head>
+    <title>Session & Local Storage</title>
+    <meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="js/script.js"></script>
+	</head>
+	<body> 
+		<h1 style="text-align:center; text-decoration:underline">Welcome to Exercise 10-3 Page</h1>
+		<h2 style="text-align:center;font-family:Papyrus">by:</h2>
+		<h3 style="text-align:center;font-family:Papyrus">Jonathan Castillo.Development Stream. MTA 98-375.</h3>
+		<h3 style="text-align:center;font-family:Papyrus">February 15, 2016. Lesson 10. </h3>
+		<div id="background">
+		<br/>
+		<!-- Firstname Textbox in HTML -->
+		<!-- txtFname id linked to function login in javascript external file -->
+	 	<div id="row" style="color:white">First Name:<input type="text" id="txtFName" required /></div>
+		<!-- Lastname Textbox in HTML -->
+		<!-- txtLname id linked to function login in javascript external file -->
+		<div id="row" style="color:white">Last Name:<input type="text" id="txtLName" required /></div>
+		<br/>
+		<!-- Login button when clicked, will render JavaScript function login  -->
+		 <div id="row" style="background-color: #292421;text-decoration:none;font-size:18px;">
+            	<a href="#Login" onclick="login()">Login</a>
+		
+         </div>			
+		
+        <br/>	
+		<!-- Rest button when clicked, will render JavaScript function clearLocal  -->		
+		<div id="row" style="background-color: #292421;text-decoration:none;color:white;font-size:18px;">
+        <a href="#Reset" onclick="clearLocal()">
+		Reset	
+		</div>
+		<br/>
+		<!-- Login button when clicked, will render JavaScript function logout  -->
+		<div id="row" style="background-color: #292421;text-decoration:none;color:white;font-size:18px;">
+		<a href="#Logout" onclick="logout()">
+        Logout	</a>
+		</div>
+		<br/>
+		<!-- Ids that has a function in JavaScript external file -->
+		<p id="mySession"></p>
+	 	<p id="rememberMe"></p> 
+		</div>
+		
+			  
+  </body>
+</html>

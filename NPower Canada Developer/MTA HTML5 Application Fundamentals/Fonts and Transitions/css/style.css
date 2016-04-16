@@ -1,0 +1,60 @@
+/* CSS File  */
+/*  Jonathan Castillo. Development Stream. MTA 98-375  */
+/*  Lesson 7. Fonts and Transitions. February 5,2016.  */
+
+
+body
+{
+	background-color:#E0EEEE;
+}
+
+
+/* Downloaded font should be Web Open Font Format (.woff). */
+/* font-family declares a renamed font the user stated */
+/* src declares the path of the font */
+@font-face
+{
+	font-family: Baron;
+    src: url('fonts/Baron/Baron.woff');
+}
+
+@font-face
+{
+	font-family:Jeepers;
+	src: url('fonts/Jeepers/Jeepers.woff');
+}
+
+.title
+{
+	font-family:Baron;
+	font-size:30px;
+	text-align:center;
+}
+
+.transitioned 
+{ 
+	font-family:Jeepers; 
+	font-weight:bold;
+	background:black; 
+	text-align:center;
+	line-height:100px; /* height of the text within the box */
+	color:maroon;
+	text-shadow:3px 3px black; /* text-shadow:h-shadow v-shadow color */
+	
+	
+	border:3px solid black;  /* 3px line around the corner of the box */
+	height: 150px;
+	width: 250px;
+	margin:25px auto;
+	/*transition attributes */
+	-webkit- transition: color 1s, width 1s, background 1s; /* syntax: prefix transition: attribute attrribute time in seconds */
+	transition: color 1s, width 1s, background 1s;
+}
+
+/* what will happen to color, width, and background when hovered */
+.transitioned:hover
+{ 
+	 width:100%;
+	color:green;
+	
+}

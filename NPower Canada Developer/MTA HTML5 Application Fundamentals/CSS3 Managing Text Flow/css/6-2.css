@@ -1,0 +1,78 @@
+/* CSS File - Link for 6-2 HTML File */
+/*  Jonathan Castillo. Development Stream. MTA 98-375  */
+/*  Lesson 6. Exercise 6-2. February 3,2016.  */
+
+/* added body, h1, and font to make it fancy and presentable. */
+
+
+body
+{
+	background-color:#DCDCDC; /*gainsboro - gray */
+	font-family: Exo-Light;
+} 
+
+h1
+{
+	font-weight:bold;
+	text-align:center;
+}
+
+a:link
+{
+	text-decoration: underline;
+	color: black; 
+}
+
+a:visited
+{
+	text-decoration: underline;
+	color: black; 
+}
+
+a:hover
+{
+	
+	text-decoration: underline;
+	color: green; 
+}
+
+
+@font-face
+{
+	font-family: Exo-Light;
+    src: url('font/exo/Exo-Light.otf');
+}
+
+.myContent 
+{
+	/* sets the number of columns - Multi-column Layout */
+	
+	column-count: 3; 
+	-moz-column-count: 3; /* -moz- prefix used for mozilla */
+	-webkit-column-count: 3; /* -webkit prefix used for chrome and safari */
+	-ms-column-count: 3; /* -ms- prefix for Microsoft browsers such as IE and Microsoft Edge */
+	
+	/* Sets the column-width, column-style, and column-rulecolor all in one declaration. */
+	/* Changed the column-rule from 3px to 5px to visually show more the divider. */
+	
+	column-rule:5px solid green; 
+	-moz-column-rule:5px solid green;   /* -moz- prefix used for mozilla */
+	-webkit-column-rule:5px solid green; /* -webkit prefix used for chrome and safari */
+	
+	text-align: justify; /* aligning the text to be just in the middle or formal or justified */
+	padding: 10px 10px; /*padding width and height */
+	border:2px solid black; /* border with a 2px black */
+	height:300px; /* main content is just 100px */
+	
+	
+	/* overflow:hidden; */ /* overflow is hidden or not visible */
+	/* overflow rule changed to scroll */
+	overflow:scroll; /* user can scroll to overflow texts */
+	
+	-moz-hyphens: auto; /* not working in Firefox either - tried it */
+	-webkit-hyphens: auto; /* Not working in Chrome - Just in Safari - source:http://www.caniuse.com */
+	-ms-hyphens: auto; /* working both in Edge and IE */
+	hyphens: auto;
+	
+}
+

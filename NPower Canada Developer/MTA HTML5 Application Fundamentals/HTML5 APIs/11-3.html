@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<!-- Jonathan Nelson Castillo. Development Stream. MTA 98-375. -->
+<!--February 19, 2016. Lesson 11. Exercise 11-3 -->
+<!-- HTML File -->
+
+
+<!-- Note: Allowed block content when running first then click Allowed once after clicking the image -->
+<!-- Note: It will not work in Chrome and Firefox if it is stored locally or if the url starts with a "file:" -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercise 11.3</title>
+		<!-- link for external css -->
+		<link href="css/11.css" rel="stylesheet" type="text/css">
+	</head>
+	<body style="background-color:#556B2F">
+	<!-- id "status" value passed -->
+	<p id="status">Click the image to determine your physical location:</p>
+	<!-- button onClick - an event where the user clicked the button, the button will find the value inside the onclick and do the specific function -->
+	<button onclick="getLocation()"><img src="images/Location.png"></button><br/><br/>
+	<script>
+		var status = document.getElementById("status");
+		<!-- test whether the geolocation is supported by the browser. -->
+		function getLocation() {
+		if (navigator.geolocation) {
+		status.innerHTML = "Geolocation is supported by this browser.";
+		alert("Geolocation is Supported");
+		<!-- IMPORTANT. Because this will is the syntax for locating your Current Position. -->
+		navigator.geolocation.getCurrentPosition(showPosition);
+		} else {
+		status.innerHTML = "Geolocation is not supported by this browser.";
+		alert("Geolocation is NOT supported");
+		}
+		}
+		<!-- function that determines your exact physical location consisting of latitude, longitude, accuracy, altitude, altitudeAccuracy, Heading degrees clockwise from North, Speed in m/sec, and the systimestamp -->
+		function showPosition(position) {
+		var d = new Date(position.timestamp);
+		status.innerHTML= 
+		"<br><u>Jonathan Nelson Castillo. Development Stream. MTA 98-375.</u>"
+		+
+		"<br><u> February 19, 2016. Lesson 11. Exercise 11-3.</u>"
+		+
+		<!-- Latitude and Longitude showPosition -->
+		"<br><br>Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude 
+		+
+		<!-- Accuracy showPosition -->
+		"<br>Accuracy: " + position.coords.accuracy
+		+
+		<!-- Altitude showPosition -->
+		"<br>Altitude meters above mean sea level: " + position.coords.altitude
+		+
+		<!-- Altitude Accuracy showPosition -->
+		"<br>altitudeAccuracy: " + position.coords.altitudeAccuracy
+		+
+		<!-- Heading degrees clockwise from North showPosition -->
+		"<br>Heading degrees clockwise from North: " + position.coords.heading
+		+
+		<!-- m/sec speed showPosition -->
+		"<br>Speed in Meters/sec : " + position.coords.speed
+		+
+		<!-- systimestamp showPosition -->
+		"<br>TimeStamp: " + d.toLocaleString();
+		
+		}
+	</script>
+</body>
+</html>
